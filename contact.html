@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Star Crackers</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="zoom-fix.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <!-- NAVBAR -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="photos/Star-Cracker.png" alt="Star Crackers Logo">
+                <h2 style="margin-top: 20px; margin-left:-22px;">
+                    Crackers
+                </h2>
+            </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    
+            <ul class="nav-links">              
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chit-fund.html">chit fund</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="https://wa.me/916385274218?text=Hello%20Star%20Crackers!%20I%20want%20to%20know%20how%20to%20place%20an%20order." target="_blank">How to order</a></li>
+                <li class="price-list-btn">
+                    <a href="price-list.pdf" download>
+                        Download Price List
+                    </a>
+                </li>
+                <li><a href="index.html#combo-offers">Combo</a></li>
+                
+                
+            </ul>
+        
+        </nav>
+    </header>
+
+<!-- PREMIUM FLOATING SOCIAL DOCK -->
+
+<div class="social-dock">
+
+    <a href="https://wa.me/919999999999"
+    target="_blank"
+    class="dock-item whatsapp">
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+        <!-- <span>WhatsApp</span> -->
+    </a>
+
+    <a href="#"
+    class="dock-item instagram">
+
+        <i class="fa-brands fa-instagram"></i>
+
+        <!-- <span>Instagram</span> -->
+    </a>
+
+    <a href="#"
+    class="dock-item facebook">
+
+        <i class="fa-brands fa-facebook-f"></i>
+
+        <!-- <span>Facebook</span> -->
+    </a>
+
+    <a href="#"
+    id="openEnquiry"
+    class="dock-item enquire">
+
+        <i class="fa-solid fa-phone"></i>
+
+        <!-- <span>Enquire</span> -->
+    </a>
+
+</div>
+    <!-- ================= HERO ================= -->
+
+    <section class="contact-hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="contact-hero-content">
+            <h1 style="">Contact Us</h1>
+            <p>
+                We are here to make your celebrations brighter,
+                safer and unforgettable.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- ================= CONTACT SECTION ================= -->
+
+    <section class="contact-section">
+
+        <div class="contact-container">
+
+            <!-- LEFT -->
+
+            <div class="contact-info">
+
+                <span class="contact-tag">
+                    Reach Us
+                </span>
+
+                <h2>
+                    Let’s Celebrate Together
+                </h2>
+
+                <p class="contact-description">
+                    Feel free to contact us for bulk orders,
+                    wholesale enquiries and festival bookings.
+                </p>
+
+                <div class="info-card">
+                    <i class="fa-solid fa-phone"></i>
+
+                    <div>
+                        <h3>Phone Number</h3>
+                        <p>+91 99999 99999</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    <div>
+                        <h3>WhatsApp</h3>
+                        <p>+91 99999 99999</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <div>
+                        <h3>Email Address</h3>
+                        <p>starcrackers@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <div>
+                        <h3>Our Location</h3>
+                        <p>Sivakasi, Tamil Nadu</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- RIGHT -->
+
+            <div class="contact-form-box">
+
+                <span class="contact-tag">
+                    Send Message
+                </span>
+
+                <h2>
+                    Quick Enquiry
+                </h2>
+
+                <form>
+
+                    <div class="input-group">
+                        <input type="text" required>
+                        <label>Your Name</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" required>
+                        <label>Phone Number</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="email" required>
+                        <label>Email Address</label>
+                    </div>
+
+                    <div class="input-group">
+                        <textarea rows="5" required></textarea>
+                        <label>Your Message</label>
+                    </div>
+
+                    <button type="submit" class="send-btn">
+                        Send Enquiry
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+ <script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+
+        if (!hamburger || !navLinks) return;
+
+        hamburger.addEventListener("click", function () {
+            navLinks.classList.toggle("active");
+        });
+
+    });
+ </script>
+
+
+</body>
+</html>

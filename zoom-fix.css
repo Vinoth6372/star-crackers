@@ -1,0 +1,1173 @@
+/* ================================================================
+   STAR CRACKERS — MASTER FIX CSS
+   Corrects all sizing designed at 80% zoom to display
+   correctly at 100% zoom. Drop this AFTER style.css & chit-fund.css.
+================================================================ */
+
+/* ---------------------------------------------------------------
+   RESET BODY TYPO
+--------------------------------------------------------------- */
+body {
+    padding-top: 0 !important;
+}
+
+/* ---------------------------------------------------------------
+   NAVBAR — shrink logo + links to fit on one line
+--------------------------------------------------------------- */
+.header {
+    height: auto !important;
+}
+
+.navbar {
+    width: 94% !important;
+    padding: 6px 0 !important;
+    gap: 12px !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+}
+
+/* Logo */
+.logo {
+    top: 0 !important;
+    gap: 4px !important;
+    flex-shrink: 0 !important;
+}
+.logo img {
+    width: 80px !important;
+    height: 50px !important;
+    transform: none !important;
+    object-fit: contain !important;
+}
+.logo h2 {
+    font-size: 1.15rem !important;
+    margin-top: 0 !important;
+    margin-left: -6px !important;
+    white-space: nowrap !important;
+}
+
+/* Nav search — slightly smaller */
+.nav-search input {
+    width: 180px !important;
+    height: 40px !important;
+    font-size: 13px !important;
+}
+.nav-search input:focus {
+    width: 220px !important;
+}
+.nav-search i {
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 12px !important;
+}
+
+/* Nav links — single row, tight */
+.nav-links {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 24px !important;
+    margin-left: auto !important;
+    margin-top: 0 !important;
+    align-items: center !important;
+    white-space: nowrap !important;
+}
+.nav-links a {
+    font-size: 0.78rem !important;
+    font-weight: 500 !important;
+}
+.price-list-btn {
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+}
+.price-list-btn a {
+    padding: 7px 12px !important;
+    font-size: 0.72rem !important;
+    border-radius: 30px !important;
+}
+
+/* ---------------------------------------------------------------
+   ANNOUNCEMENT BAR — sits right below the header
+--------------------------------------------------------------- */
+.news-ticker-wrap {
+    margin-top: 62px !important;
+    height: 40px !important;
+    border-top: 6px solid #d4af37 !important;
+}
+.news-ticker-wrap.hide {
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+.news-label {
+    min-width: 120px !important;
+    font-size: 12px !important;
+}
+.track-group span {
+    font-size: 12px !important;
+    padding: 0 35px !important;
+}
+
+/* ---------------------------------------------------------------
+   HERO SLIDER — proper height, no extra top gap
+--------------------------------------------------------------- */
+.hero-slider {
+    margin-top: 0 !important;
+    height: calc(100vh - 102px) !important;
+}
+.slide-content {
+    max-width: 560px !important;
+    min-height: auto !important;
+}
+.slide-content h1 {
+    font-size: clamp(1.7rem, 3.2vw, 2.6rem) !important;
+    margin-bottom: 14px !important;
+    line-height: 1.2 !important;
+}
+.slide-content p {
+    font-size: 0.9rem !important;
+    margin-bottom: 22px !important;
+    line-height: 1.7 !important;
+}
+.tag {
+    padding: 8px 18px !important;
+    font-size: 0.8rem !important;
+    margin-bottom: 16px !important;
+}
+.gold-btn, .outline-btn {
+    padding: 11px 24px !important;
+    font-size: 0.85rem !important;
+}
+.hero-buttons {
+    gap: 12px !important;
+}
+
+/* ---------------------------------------------------------------
+   SECTION TITLES — unified across all pages
+--------------------------------------------------------------- */
+.section-title h2,
+.vertical-title h2 {
+    font-size: 1.9rem !important;
+    margin-bottom: 8px !important;
+}
+.section-title span,
+.vertical-title span {
+    font-size: 0.85rem !important;
+    padding: 7px 16px !important;
+    border-radius: 30px !important;
+    margin-bottom: 10px !important;
+    display: inline-block !important;
+}
+.section-title p {
+    font-size: 0.9rem !important;
+}
+.section-title {
+    margin-bottom: 35px !important;
+}
+
+/* ---------------------------------------------------------------
+   VERTICAL CATEGORY SECTION
+--------------------------------------------------------------- */
+.vertical-category-section {
+    margin: 40px auto !important;
+    width: 94% !important;
+}
+.vertical-title {
+    margin-bottom: 30px !important;
+}
+.vertical-sidebar {
+    width: 210px !important;
+    top: 72px !important;
+    gap: 10px !important;
+}
+.v-btn {
+    padding: 12px 16px !important;
+    font-size: 13px !important;
+    border-radius: 16px !important;
+    gap: 10px !important;
+}
+.v-btn i {
+    font-size: 14px !important;
+}
+.vertical-wrapper {
+    gap: 24px !important;
+}
+.v-group {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 18px !important;
+}
+.v-card {
+    border-radius: 20px !important;
+    padding: 14px !important;
+}
+.v-card img {
+    height: 170px !important;
+}
+.v-card h3 {
+    font-size: 0.88rem !important;
+    margin-top: 10px !important;
+}
+
+/* ---------------------------------------------------------------
+   COMBO SECTION — 4 cards in one row on desktop
+--------------------------------------------------------------- */
+.combo-section {
+    padding: 60px 5% !important;
+}
+.combo-container {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 20px !important;
+}
+.combo-card {
+    border-radius: 20px !important;
+}
+.combo-card img {
+    height: 180px !important;
+}
+.combo-content {
+    padding: 18px !important;
+}
+.combo-content h3 {
+    font-size: 1rem !important;
+    margin-bottom: 8px !important;
+}
+.combo-content p {
+    font-size: 0.82rem !important;
+    line-height: 1.6 !important;
+    margin-bottom: 14px !important;
+}
+.new-price {
+    font-size: 1.3rem !important;
+    color: #e53e3e !important;
+}
+.old-price {
+    font-size: 0.9rem !important;
+}
+.combo-content a {
+    padding: 10px 18px !important;
+    font-size: 0.82rem !important;
+}
+.combo-badge {
+    padding: 6px 12px !important;
+    font-size: 11px !important;
+}
+
+/* ---------------------------------------------------------------
+   FEATURE STRIP
+--------------------------------------------------------------- */
+.features {
+    margin: 40px auto !important;
+    gap: 20px !important;
+}
+.feature-card {
+    padding: 28px 24px !important;
+    border-radius: 20px !important;
+}
+.feature-icon {
+    font-size: 2rem !important;
+    margin-bottom: 12px !important;
+}
+.feature-card h3 {
+    font-size: 1rem !important;
+    margin-bottom: 8px !important;
+}
+.feature-card p {
+    font-size: 0.85rem !important;
+}
+
+/* ---------------------------------------------------------------
+   SAFETY SECTION
+--------------------------------------------------------------- */
+.safety-section {
+    width: 94% !important;
+    margin: 55px auto !important;
+}
+.safety-grid {
+    margin-top: 35px !important;
+    gap: 18px !important;
+}
+.safety-card {
+    padding: 28px 22px !important;
+    border-radius: 20px !important;
+}
+.safety-icon {
+    width: 60px !important;
+    height: 60px !important;
+    font-size: 1.5rem !important;
+    border-radius: 16px !important;
+    margin-bottom: 16px !important;
+}
+.safety-card h3 {
+    font-size: 1rem !important;
+}
+.safety-card p {
+    font-size: 0.85rem !important;
+}
+.safety-warning {
+    margin-top: 40px !important;
+    padding: 28px !important;
+    border-radius: 20px !important;
+    gap: 20px !important;
+}
+.warning-icon {
+    min-width: 65px !important;
+    height: 65px !important;
+    font-size: 1.8rem !important;
+    border-radius: 18px !important;
+}
+.warning-content h3 {
+    font-size: 1.2rem !important;
+}
+.warning-content p {
+    font-size: 0.85rem !important;
+}
+
+/* ---------------------------------------------------------------
+   CATEGORIES GRID
+--------------------------------------------------------------- */
+.categories {
+    margin: 55px auto !important;
+}
+.category-card img {
+    height: 180px !important;
+}
+.category-card h3 {
+    padding: 14px !important;
+    font-size: 0.9rem !important;
+}
+
+/* ---------------------------------------------------------------
+   ACHIEVEMENTS
+--------------------------------------------------------------- */
+.achievements {
+    width: 94% !important;
+    margin: 55px auto !important;
+}
+.achievement-grid {
+    gap: 18px !important;
+}
+.achievement-card {
+    padding: 28px 22px !important;
+    border-radius: 20px !important;
+}
+.achievement-icon {
+    width: 60px !important;
+    height: 60px !important;
+    font-size: 1.7rem !important;
+    margin-bottom: 16px !important;
+}
+.achievement-card h3 {
+    font-size: 1rem !important;
+    margin-bottom: 10px !important;
+}
+.achievement-card p {
+    font-size: 0.85rem !important;
+}
+
+/* ---------------------------------------------------------------
+   TESTIMONIALS
+--------------------------------------------------------------- */
+.testimonial-section {
+    width: 94% !important;
+    margin: 55px auto !important;
+}
+.testimonial-grid {
+    gap: 20px !important;
+    margin-top: 35px !important;
+}
+.testimonial-card {
+    padding: 28px 24px !important;
+    border-radius: 22px !important;
+}
+.quote-icon {
+    font-size: 3.5rem !important;
+    margin-bottom: 12px !important;
+}
+.testimonial-text {
+    font-size: 0.88rem !important;
+    margin-bottom: 20px !important;
+    line-height: 1.8 !important;
+}
+.testimonial-user img {
+    width: 52px !important;
+    height: 52px !important;
+}
+.testimonial-user h4 {
+    font-size: 0.95rem !important;
+}
+
+/* ---------------------------------------------------------------
+   DELIVERY SECTION
+--------------------------------------------------------------- */
+.delivery-section {
+    padding: 40px 0 !important;
+}
+.delivery-grid {
+    gap: 20px !important;
+    padding: 0 5% !important;
+}
+.del-item .del-icon {
+    font-size: 32px !important;
+    margin-bottom: 8px !important;
+}
+.del-item h3 {
+    font-size: 14px !important;
+}
+.del-item p {
+    font-size: 13px !important;
+}
+
+/* ---------------------------------------------------------------
+   FOOTER
+--------------------------------------------------------------- */
+.modern-footer {
+    margin-top: 55px !important;
+    padding-top: 55px !important;
+}
+.footer-about h2 {
+    font-size: 1.6rem !important;
+    margin-bottom: 14px !important;
+}
+.footer-about p {
+    font-size: 0.85rem !important;
+}
+.footer-contact p {
+    font-size: 0.85rem !important;
+    margin-bottom: 10px !important;
+}
+.footer-links-box h3,
+.footer-newsletter h3 {
+    font-size: 1.1rem !important;
+    margin-bottom: 20px !important;
+}
+.footer-links {
+    gap: 12px !important;
+}
+.footer-links a {
+    font-size: 0.85rem !important;
+}
+.footer-newsletter p {
+    font-size: 0.85rem !important;
+}
+.footer-badges span {
+    font-size: 12px !important;
+    padding: 7px 12px !important;
+}
+.footer-container {
+    gap: 40px !important;
+    padding-bottom: 45px !important;
+}
+
+/* ---------------------------------------------------------------
+   SHOP CATEGORY SECTION (filter buttons + products)
+--------------------------------------------------------------- */
+.shop-category-section {
+    width: 94% !important;
+    margin: 55px auto !important;
+}
+.cat-btn {
+    padding: 10px 20px !important;
+    font-size: 13px !important;
+    border-radius: 40px !important;
+}
+.category-buttons {
+    gap: 10px !important;
+    margin-bottom: 30px !important;
+}
+.cat-product img {
+    height: 180px !important;
+}
+.cat-product h3 {
+    font-size: 0.88rem !important;
+    margin-top: 10px !important;
+}
+.category-group {
+    gap: 18px !important;
+}
+
+/* ---------------------------------------------------------------
+   OFFER SECTION
+--------------------------------------------------------------- */
+.offer-section {
+    margin: 55px auto !important;
+    padding: 55px 40px !important;
+    border-radius: 28px !important;
+}
+.offer-content h2 {
+    font-size: 1.9rem !important;
+    margin: 12px 0 !important;
+}
+.shop-deal {
+    padding: 11px 24px !important;
+    font-size: 0.85rem !important;
+    margin-top: 20px !important;
+}
+
+/* ---------------------------------------------------------------
+   ENQUIRY POPUP
+--------------------------------------------------------------- */
+.enquiry-box h2 {
+    font-size: 1.4rem !important;
+}
+
+/* ---------------------------------------------------------------
+   FLOATING SOCIAL DOCK
+--------------------------------------------------------------- */
+.dock-item {
+    width: 44px !important;
+    height: 44px !important;
+}
+.dock-item i {
+    font-size: 17px !important;
+}
+
+/* ---------------------------------------------------------------
+   ABOUT PAGE
+--------------------------------------------------------------- */
+.about-hero {
+    height: 35vh !important;
+    margin-top: 62px !important;
+}
+.about-hero-content h1 {
+    font-size: 2.4rem !important;
+    margin-bottom: 12px !important;
+}
+.about-hero-content p {
+    font-size: 0.9rem !important;
+}
+.about-section {
+    width: 94% !important;
+    margin: 55px auto !important;
+}
+.about-grid {
+    gap: 40px !important;
+}
+.about-content span {
+    font-size: 0.85rem !important;
+}
+.about-content h2 {
+    font-size: 2rem !important;
+    margin: 12px 0 !important;
+}
+.about-content p {
+    font-size: 0.88rem !important;
+    line-height: 1.8 !important;
+    margin-bottom: 12px !important;
+}
+.why-section {
+    width: 94% !important;
+    margin: 55px auto !important;
+}
+.why-grid {
+    gap: 18px !important;
+}
+.why-card {
+    padding: 28px 22px !important;
+    border-radius: 20px !important;
+}
+.why-icon {
+    width: 65px !important;
+    height: 65px !important;
+    font-size: 1.6rem !important;
+    margin-bottom: 16px !important;
+}
+.why-card h3 {
+    font-size: 1rem !important;
+    margin-bottom: 8px !important;
+}
+.why-card p {
+    font-size: 0.85rem !important;
+}
+.quality-section {
+    width: 94% !important;
+    margin: 55px auto !important;
+    padding: 50px !important;
+    border-radius: 28px !important;
+}
+.quality-grid {
+    gap: 40px !important;
+}
+.quality-content h2 {
+    font-size: 2rem !important;
+    margin-bottom: 16px !important;
+}
+.quality-content p {
+    font-size: 0.88rem !important;
+    line-height: 1.8 !important;
+}
+.counter-section {
+    width: 94% !important;
+    margin: 55px auto !important;
+}
+.counter-grid {
+    gap: 18px !important;
+}
+.counter-card {
+    padding: 28px !important;
+    border-radius: 20px !important;
+}
+.counter-card h2 {
+    font-size: 2rem !important;
+    margin-bottom: 6px !important;
+}
+.counter-card p {
+    font-size: 0.85rem !important;
+}
+
+/* About testimonials */
+.testimonial-section .section-title h2 {
+    font-size: 1.9rem !important;
+}
+
+/* ---------------------------------------------------------------
+   CONTACT PAGE
+--------------------------------------------------------------- */
+.contact-hero {
+    height: 38vh !important;
+    margin-top: 62px !important;
+}
+.contact-hero-content h1 {
+    font-size: 2.4rem !important;
+    margin-bottom: 10px !important;
+    margin-top: 0 !important;
+}
+.contact-hero-content p {
+    font-size: 0.9rem !important;
+}
+.contact-section {
+    padding: 60px 6% !important;
+}
+.contact-container {
+    gap: 35px !important;
+}
+.contact-info h2,
+.contact-form-box h2 {
+    font-size: 1.8rem !important;
+    margin-bottom: 14px !important;
+}
+.contact-tag {
+    font-size: 12px !important;
+    padding: 7px 16px !important;
+    margin-bottom: 14px !important;
+}
+.contact-description {
+    font-size: 0.88rem !important;
+    margin-bottom: 25px !important;
+}
+.info-card {
+    padding: 18px !important;
+    margin-bottom: 14px !important;
+    border-radius: 18px !important;
+    gap: 14px !important;
+}
+.info-card i {
+    width: 46px !important;
+    height: 46px !important;
+    font-size: 17px !important;
+    border-radius: 14px !important;
+}
+.info-card h3 {
+    font-size: 0.95rem !important;
+    margin-bottom: 4px !important;
+}
+.info-card p {
+    font-size: 0.85rem !important;
+}
+.contact-form-box {
+    padding: 35px !important;
+    border-radius: 22px !important;
+}
+.input-group {
+    margin-bottom: 20px !important;
+}
+.input-group input,
+.input-group textarea {
+    padding: 14px 16px !important;
+    font-size: 14px !important;
+    border-radius: 12px !important;
+}
+.input-group label {
+    font-size: 14px !important;
+    top: 14px !important;
+}
+.send-btn {
+    padding: 13px 30px !important;
+    font-size: 14px !important;
+}
+
+/* ---------------------------------------------------------------
+   CHIT FUND PAGE
+--------------------------------------------------------------- */
+/* Hero on chit-fund page */
+.hero {
+    height: 42vh !important;
+    margin-top: 62px !important;
+    padding: 20px !important;
+}
+.hero h1 {
+    font-size: 2.4rem !important;
+    margin-bottom: 12px !important;
+}
+.hero p {
+    font-size: 0.9rem !important;
+}
+.hero-content {
+    margin-top: 0 !important;
+}
+/* Plans */
+.plans {
+    width: 94% !important;
+    margin: 55px auto !important;
+}
+.plan-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)) !important;
+    gap: 22px !important;
+}
+.plan-card {
+    padding: 28px !important;
+    border-radius: 20px !important;
+    min-height: auto !important;
+}
+.plan-card h3 {
+    font-size: 1.3rem !important;
+    margin-bottom: 10px !important;
+}
+.plan-price {
+    font-size: 1.8rem !important;
+    margin-bottom: 16px !important;
+}
+.plan-card ul li {
+    margin: 10px 0 !important;
+    font-size: 0.88rem !important;
+}
+.join-btn {
+    padding: 12px !important;
+    font-size: 0.88rem !important;
+    margin-top: 18px !important;
+}
+.popular {
+    padding: 7px 40px !important;
+    font-size: 11px !important;
+}
+
+/* ---------------------------------------------------------------
+   MOBILE — 768px and below: clean, professional
+--------------------------------------------------------------- */
+@media (max-width: 768px) {
+
+    /* Header */
+    .header {
+        height: 64px !important;
+        background: rgba(255,255,255,0.98) !important;
+        backdrop-filter: blur(12px) !important;
+    }
+    .navbar {
+        width: 95% !important;
+        padding: 0 !important;
+        height: 64px !important;
+    }
+    .logo img {
+        width: 70px !important;
+        height: 44px !important;
+    }
+    .logo h2 {
+        font-size: 1rem !important;
+        margin-left: -4px !important;
+    }
+    .hamburger {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 5px !important;
+        cursor: pointer !important;
+        z-index: 99999 !important;
+    }
+    .hamburger span {
+        width: 24px !important;
+        height: 3px !important;
+        background: #222 !important;
+        border-radius: 10px !important;
+    }
+    /* Mobile slide-out menu */
+    .nav-links {
+        position: fixed !important;
+        top: 64px !important;
+        left: -100% !important;
+        width: 80% !important;
+        height: calc(100vh - 64px) !important;
+        background: #fff !important;
+        flex-direction: column !important;
+        flex-wrap: nowrap !important;
+        gap: 0 !important;
+        padding: 20px 0 !important;
+        margin: 0 !important;
+        transition: left 0.35s ease !important;
+        z-index: 9999 !important;
+        box-shadow: 8px 0 25px rgba(0,0,0,0.12) !important;
+        overflow-y: auto !important;
+        white-space: normal !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+    .nav-links.active {
+        left: 0 !important;
+    }
+    .nav-links li {
+        width: 100% !important;
+    }
+    .nav-links a {
+        display: block !important;
+        padding: 13px 24px !important;
+        font-size: 15px !important;
+        border-bottom: 1px solid #f0f0f0 !important;
+        color: #222 !important;
+    }
+    .price-list-btn a {
+        display: block !important;
+        margin: 8px 24px !important;
+        text-align: center !important;
+        font-size: 13px !important;
+        padding: 9px 14px !important;
+        border-radius: 30px !important;
+    }
+    .nav-search {
+        display: none !important;
+    }
+
+    /* Ticker */
+    .news-ticker-wrap {
+        margin-top: 64px !important;
+        height: 36px !important;
+    }
+    .news-label {
+        min-width: 100px !important;
+        font-size: 11px !important;
+    }
+    .track-group span {
+        font-size: 11px !important;
+        padding: 0 24px !important;
+    }
+
+    /* Hero */
+    .hero-slider {
+        height: 70vh !important;
+    }
+    .slide-content {
+        left: 0 !important;
+        right: 0 !important;
+        padding: 0 20px !important;
+        text-align: center !important;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+    .slide-content h1 {
+        font-size: 1.6rem !important;
+        line-height: 1.2 !important;
+    }
+    .slide-content p {
+        font-size: 0.82rem !important;
+    }
+    .hero-buttons {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 10px !important;
+    }
+    .gold-btn, .outline-btn {
+        width: 80% !important;
+        text-align: center !important;
+        padding: 11px 20px !important;
+    }
+
+    /* Section titles */
+    .section-title h2,
+    .vertical-title h2 {
+        font-size: 1.5rem !important;
+    }
+
+    /* Vertical category */
+    .vertical-wrapper {
+        flex-direction: column !important;
+    }
+    .vertical-sidebar {
+        width: 100% !important;
+        position: relative !important;
+        top: 0 !important;
+        flex-direction: row !important;
+        overflow-x: auto !important;
+        scrollbar-width: none !important;
+        gap: 8px !important;
+        padding-bottom: 8px !important;
+    }
+    .vertical-sidebar::-webkit-scrollbar { display: none !important; }
+    .v-btn {
+        min-width: 140px !important;
+        flex-shrink: 0 !important;
+        justify-content: center !important;
+        font-size: 12px !important;
+        padding: 10px 12px !important;
+    }
+    .v-group {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px !important;
+    }
+    .v-card img {
+        height: 140px !important;
+    }
+    .v-card h3 {
+        font-size: 0.8rem !important;
+    }
+
+    /* Combo — 2 cols on mobile */
+    .combo-container {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 14px !important;
+    }
+    .combo-card img {
+        height: 140px !important;
+    }
+    .combo-content {
+        padding: 12px !important;
+    }
+    .combo-content h3 {
+        font-size: 0.85rem !important;
+    }
+    .new-price {
+        font-size: 1rem !important;
+    }
+    .old-price {
+        font-size: 0.75rem !important;
+    }
+    .combo-content p {
+        display: none !important;
+    }
+    .combo-content a {
+        padding: 8px 14px !important;
+        font-size: 0.75rem !important;
+    }
+
+    /* Features */
+    .features {
+        grid-template-columns: 1fr !important;
+        gap: 14px !important;
+        margin: 30px auto !important;
+    }
+
+    /* Safety */
+    .safety-grid {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 12px !important;
+    }
+    .safety-card {
+        padding: 18px 14px !important;
+    }
+    .safety-warning {
+        flex-direction: column !important;
+        text-align: center !important;
+        padding: 20px !important;
+    }
+
+    /* Categories */
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px !important;
+    }
+    .category-card img {
+        height: 130px !important;
+    }
+
+    /* Achievements */
+    .achievement-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px !important;
+    }
+
+    /* Testimonials */
+    .testimonial-grid {
+        grid-template-columns: 1fr !important;
+        gap: 14px !important;
+    }
+
+    /* Delivery */
+    .delivery-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 15px !important;
+    }
+
+    /* Footer */
+    .footer-container {
+        grid-template-columns: 1fr !important;
+        text-align: center !important;
+        gap: 28px !important;
+    }
+    .footer-contact p {
+        justify-content: center !important;
+    }
+    .footer-badges {
+        justify-content: center !important;
+    }
+    .footer-links {
+        align-items: center !important;
+    }
+    .footer-links-box h3::after,
+    .footer-newsletter h3::after {
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+
+    /* Social dock */
+    .social-dock {
+        left: auto !important;
+        right: 8px !important;
+        top: auto !important;
+        bottom: 80px !important;
+        transform: none !important;
+    }
+    .dock-item {
+        width: 42px !important;
+        height: 42px !important;
+        border-radius: 50% !important;
+        margin-left: 0 !important;
+        animation: none !important;
+    }
+    .dock-item:hover {
+        margin-left: 0 !important;
+        border-radius: 50% !important;
+    }
+
+    /* About page mobile */
+    .about-hero {
+        height: 30vh !important;
+    }
+    .about-hero-content h1 {
+        font-size: 1.8rem !important;
+    }
+    .about-grid,
+    .quality-grid {
+        grid-template-columns: 1fr !important;
+        gap: 24px !important;
+    }
+    .quality-section {
+        padding: 30px 20px !important;
+    }
+    .why-grid {
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+    }
+    .counter-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px !important;
+    }
+    .counter-card h2 {
+        font-size: 1.6rem !important;
+    }
+
+    /* Contact mobile */
+    .contact-hero {
+        height: 30vh !important;
+    }
+    .contact-hero-content h1 {
+        font-size: 1.8rem !important;
+    }
+    .contact-container {
+        grid-template-columns: 1fr !important;
+    }
+    .contact-section {
+        padding: 40px 5% !important;
+    }
+    .contact-form-box {
+        padding: 24px !important;
+    }
+
+    /* Chit fund mobile */
+    .hero {
+        height: 38vh !important;
+    }
+    .hero h1 {
+        font-size: 1.8rem !important;
+    }
+    .plan-grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+    }
+
+    /* Mobile WA button */
+    .mobile-whatsapp {
+        display: flex !important;
+        align-items: center !important;
+        gap: 8px !important;
+        font-size: 13px !important;
+        padding: 11px 22px !important;
+    }
+}
+
+/* ---------------------------------------------------------------
+   TABLET — 769px–1199px
+--------------------------------------------------------------- */
+@media (min-width: 769px) and (max-width: 1199px) {
+
+    .combo-container {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    .v-group {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    .vertical-sidebar {
+        width: 190px !important;
+    }
+    .nav-links a {
+        font-size: 0.72rem !important;
+    }
+    .nav-links {
+        gap: 7px !important;
+    }
+    .logo img {
+        width: 72px !important;
+        height: 46px !important;
+    }
+    .logo h2 {
+        font-size: 1rem !important;
+    }
+    .nav-search {
+        display: none !important;
+    }
+    .achievement-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    .counter-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    .testimonial-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+/* ---------------------------------------------------------------
+   LARGE SCREENS 1400px+: prevent over-expansion
+--------------------------------------------------------------- */
+@media (min-width: 1400px) {
+    .combo-container {
+        grid-template-columns: repeat(4, 1fr) !important;
+    }
+    .v-group {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+
+/* ---------------------------------------------------------------
+   INLINE FONT-SIZE OVERRIDES (combo card prices in HTML)
+   These override the style="font-size:36px" attributes
+--------------------------------------------------------------- */
+.new-price[style],
+span.new-price {
+    font-size: 1.3rem !important;
+    color: #e53e3e !important;
+}
+.old-price[style],
+span.old-price {
+    font-size: 0.88rem !important;
+}
+
+/* Achievement card inline font overrides */
+.achievement-card h3[style] {
+    font-size: 1rem !important;
+}

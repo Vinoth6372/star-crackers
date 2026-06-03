@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About Us | Star Crackers</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<style>
+
+/* ABOUT HERO */
+
+.about-hero{
+    height: 40vh;
+    background:
+    linear-gradient(rgba(239, 90, 90, 0.65), rgba(1, 156, 252, 0.893)),
+    url('photos/about-banner.jpg');
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: white;
+
+    margin-top: 62px;
+}
+
+.about-hero-content h1{
+    font-size: 4rem;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 20px;
+}
+
+.about-hero-content p{
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.9;
+    font-size: 1.1rem;
+}
+
+/* ABOUT SECTION */
+
+.about-section{
+    width: 90%;
+    margin: 100px auto;
+}
+
+.about-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-image img{
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.about-content span{
+    color: var(--gold);
+    font-weight: 600;
+}
+
+.about-content h2{
+    font-size: 3rem;
+    margin: 20px 0;
+    font-family: 'Cinzel', serif;
+}
+
+.about-content p{
+    line-height: 2;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* WHY CHOOSE */
+
+.why-section{
+    width: 90%;
+    margin: 120px auto;
+}
+
+.why-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.why-card{
+    background: white;
+    padding: 40px;
+    border-radius: 30px;
+    text-align: center;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+
+    transition: 0.5s ease;
+}
+
+.why-card:hover{
+    transform: translateY(-15px);
+}
+
+.why-icon{
+    width: 90px;
+    height: 90px;
+
+    margin: auto;
+    margin-bottom: 25px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2.2rem;
+
+    background: linear-gradient(
+    135deg,
+    #d4af37,
+    #b68d1f
+    );
+
+    color: white;
+}
+
+.why-card h3{
+    margin-bottom: 15px;
+    color: var(--gold);
+}
+
+.why-card p{
+    line-height: 1.8;
+    color: #666;
+}
+
+/* QUALITY SECTION */
+
+.quality-section{
+    width: 90%;
+    margin: 120px auto;
+
+    background: linear-gradient(
+    135deg,
+    #fff6dc,
+    #f7e7b6
+    );
+
+    border-radius: 40px;
+
+    padding: 80px;
+}
+
+.quality-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.quality-content h2{
+    font-size: 3rem;
+    margin-bottom: 25px;
+    font-family: 'Cinzel', serif;
+}
+
+.quality-content p{
+    line-height: 2;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.quality-image img{
+    width: 100%;
+    border-radius: 30px;
+}
+
+/* COUNTER */
+
+.counter-section{
+    width: 90%;
+    margin: 120px auto;
+}
+
+.counter-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+
+.counter-card{
+    background: white;
+    padding: 40px;
+    border-radius: 30px;
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.counter-card h2{
+    font-size: 3rem;
+    color: var(--gold);
+    margin-bottom: 10px;
+}
+
+/* TESTIMONIAL */
+
+.testimonial-section{
+    width: 90%;
+    margin: 120px auto;
+}
+
+.testimonial-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.testimonial-card{
+    background: white;
+    padding: 40px;
+    border-radius: 30px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+    transition: 0.5s ease;
+}
+
+.testimonial-card:hover{
+    transform: translateY(-12px);
+}
+
+.testimonial-card::before{
+    content: "“";
+
+    position: absolute;
+
+    top: -20px;
+    right: 20px;
+
+    font-size: 8rem;
+    color: rgba(212,175,55,0.15);
+}
+
+.testimonial-card p{
+    line-height: 1.9;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.testimonial-user{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.testimonial-user img{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-user h4{
+    margin-bottom: 5px;
+}
+
+.stars{
+    color: #ffb400;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+    .about-grid,
+    .quality-grid,
+    .why-grid,
+    .counter-grid,
+    .testimonial-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .about-hero-content h1{
+        font-size: 2.8rem;
+    }
+
+    .quality-section{
+        padding: 40px 25px;
+    }
+}
+
+/* hamburger menu */
+
+.hamburger{
+    display:none;
+}
+
+@media(max-width:768px){
+
+    .hamburger{
+        display:flex;
+        flex-direction:column;
+        gap:5px;
+        cursor:pointer;
+        z-index:99999;
+    }
+
+    .hamburger span{
+        width:28px;
+        height:3px;
+        background:#222;
+        border-radius:10px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .nav-links{
+        position:fixed;
+        top:80px;
+        left:-100%;
+        width:85%;
+        height:calc(100vh - 80px);
+        background:#fff;
+
+        display:flex;
+        flex-direction:column;
+
+        padding:30px;
+        margin:0;
+
+        transition:.4s ease;
+
+        z-index:9999;
+
+        box-shadow:10px 0 30px rgba(0,0,0,.12);
+    }
+
+    .nav-links.active{
+        left:0;
+    }
+
+}
+
+</style>
+
+    <link rel="stylesheet" href="zoom-fix.css">
+</head>
+
+<body>
+
+
+<!-- NAVBAR -->
+<header class="header">
+    <nav class="navbar">
+        <div class="logo">
+            <img src="photos/Star-Cracker.png" alt="Star Crackers Logo">
+            <h2 style="margin-top: 20px; margin-left:-22px;">
+                Crackers
+            </h2>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    
+        <ul class="nav-links">              
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chit-fund.html">chit fund</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="https://wa.me/916385274218?text=Hello%20Star%20Crackers!%20I%20want%20to%20know%20how%20to%20place%20an%20order." target="_blank">How to order</a></li>
+            <li class="price-list-btn">
+                <a href="price-list.pdf" download>
+                    Download Price List
+                </a>
+            </li>
+            <li><a href="index.html#combo-offers">Combo</a></li>
+            
+            
+        </ul>
+    
+    </nav>
+</header>
+
+
+
+
+<!-- PREMIUM FLOATING SOCIAL DOCK -->
+
+<div class="social-dock">
+
+    <a href="https://wa.me/919999999999"
+    target="_blank"
+    class="dock-item whatsapp">
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+        <!-- <span>WhatsApp</span> -->
+    </a>
+
+    <a href="#"
+    class="dock-item instagram">
+
+        <i class="fa-brands fa-instagram"></i>
+
+        <!-- <span>Instagram</span> -->
+    </a>
+
+    <a href="#"
+    class="dock-item facebook">
+
+        <i class="fa-brands fa-facebook-f"></i>
+
+        <!-- <span>Facebook</span> -->
+    </a>
+
+    <a href="#"
+    id="openEnquiry"
+    class="dock-item enquire">
+
+        <i class="fa-solid fa-phone"></i>
+
+        <!-- <span>Enquire</span> -->
+    </a>
+
+</div>
+<!-- HERO -->
+
+<section class="about-hero">
+
+<div class="about-hero-content">
+
+<h1>About Star Crackers</h1>
+
+<p>
+Premium Sivakasi crackers with trusted quality, safe celebration products,
+luxury combo packs, and memorable festive experiences for families.
+</p>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="about-section">
+
+<div class="about-grid">
+
+<div class="about-image">
+<img src="v2/ChatGPT Image May 25, 2026, 04_32_13 PM.png">
+</div>
+
+<div class="about-content">
+
+<span>Who We Are</span>
+
+<h2>Trusted Fireworks Store Since 2015</h2>
+
+<p>
+Star Crackers is one of the leading Sivakasi crackers dealers providing
+premium quality fireworks directly from trusted manufacturers.
+</p>
+
+<p>
+We focus on quality, safety, affordable pricing, and customer satisfaction
+to make every celebration colorful and memorable.
+</p>
+
+<p>
+Our wide range includes sparklers, flower pots, sky shots,
+gift boxes, premium combos, kids crackers, and festival specials.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- WHY CHOOSE -->
+
+<section class="why-section">
+
+<div class="section-title">
+<span>Why Choose Us</span>
+<h2>Our Specialities</h2>
+</div>
+
+<div class="why-grid">
+
+<div class="why-card">
+<div class="why-icon">
+🎆
+</div>
+
+<h3>Premium Quality</h3>
+
+<p>
+All crackers are sourced directly from trusted Sivakasi manufacturers.
+</p>
+</div>
+
+<div class="why-card">
+<div class="why-icon">
+🛡️
+</div>
+
+<h3>Safe Products</h3>
+
+<p>
+We ensure safety standards and quality packaging for every order.
+</p>
+</div>
+
+<div class="why-card">
+<div class="why-icon">
+🚚
+</div>
+
+<h3>Fast Delivery</h3>
+
+<p>
+Same day dispatch and reliable delivery across Tamil Nadu and nearby regions.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- QUALITY -->
+
+<section class="quality-section">
+
+<div class="quality-grid">
+
+<div class="quality-content">
+
+<h2>Safety & Quality Assurance</h2>
+
+<p>
+We prioritize customer safety by offering tested and high-quality products
+with secure packaging and trusted manufacturing standards.
+</p>
+
+<p>
+Our team carefully selects products to ensure premium performance,
+beautiful effects, and safe celebrations for families.
+</p>
+
+</div>
+
+<div class="quality-image">
+<img src="v2/ChatGPT Image May 25, 2026, 04_32_13 PM.png">
+</div>
+
+</div>
+
+</section>
+
+<!-- COUNTERS -->
+
+<section class="counter-section">
+
+<div class="counter-grid">
+
+<div class="counter-card">
+<h2>10K+</h2>
+<p>Happy Customers</p>
+</div>
+
+<div class="counter-card">
+<h2>500+</h2>
+<p>Premium Products</p>
+</div>
+
+<div class="counter-card">
+<h2>10+</h2>
+<p>Years Experience</p>
+</div>
+
+<div class="counter-card">
+<h2>100%</h2>
+<p>Quality Checked</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- TESTIMONIAL -->
+
+<section class="testimonial-section">
+
+<div class="section-title">
+<span>Testimonials</span>
+<h2>What Customers Say</h2>
+</div>
+
+<div class="testimonial-grid">
+
+<div class="testimonial-card">
+
+<p>
+Excellent quality crackers with fast delivery.
+Packaging was premium and safe.
+</p>
+
+<div class="testimonial-user">
+
+<!-- <img src="photos/user1.jpg"> -->
+
+<div>
+<h4>Arun Kumar</h4>
+
+<div class="stars">
+★★★★★
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="testimonial-card">
+
+<p>
+Very affordable combo packs and genuine Sivakasi products.
+Highly recommended for Diwali shopping.
+</p>
+
+<div class="testimonial-user">
+
+<!-- <img src="photos/user2.jpg"> -->
+
+<div>
+<h4>Premkumar</h4>
+
+<div class="stars">
+★★★★
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="testimonial-card">
+
+<p>
+Customer support was excellent and delivery was on time.
+The crackers quality was superb.
+</p>
+
+<div class="testimonial-user">
+
+<!-- <img src="photos/user3.jpg"> -->
+
+<div>
+<h4>Vignesh</h4>
+
+<div class="stars">
+★★★★★
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- MODERN FOOTER -->
+    <footer class="modern-footer" id="contact">
+
+        <div class="footer-container">
+
+            <!-- LEFT -->
+            <div class="footer-about">
+
+                <h2>
+                    Star <span>Crackers</span>
+                </h2>
+
+                <p>
+                    Your trusted destination for premium fireworks,
+                    festive combo packs, and luxury celebration products.
+                </p>
+
+                <div class="footer-contact">
+
+                    <p>
+                        <i class="fa-solid fa-phone"></i>
+                        +91 99999 99999
+                    </p>
+
+                    <p>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        +91 99999 99999
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-envelope"></i>
+                        starcrackers@gmail.com
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Sivakasi, Tamil Nadu
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- CENTER LINKS -->
+            <div class="footer-links-box">
+
+                <h3>Quick Links</h3>
+
+                <div class="footer-links">
+
+                    <a href="index.html">Home</a>
+
+                    <a href="chit-fund.html">Chit Fund</a>
+
+                    <a href="#categories">Products</a>
+
+                    <a href="#products">Combo Offers</a>
+
+                    <a href="#contact">Contact</a>
+
+                </div>
+
+            </div>
+
+            <!-- RIGHT -->
+            <div class="footer-newsletter">
+
+                <h3>Stay Updated</h3>
+
+                <p>
+                    Subscribe for exclusive festive offers and latest cracker collections.
+                </p>
+
+                <form class="newsletter-form">
+
+                    <input 
+                        type="email" 
+                        placeholder="Your email address"
+                    >
+
+                    <button type="submit">
+                        →
+                    </button>
+
+                </form>
+
+                <div class="footer-badges">
+
+                    <span>🎆 Premium Quality</span>
+
+                    <span>🚚 Fast Delivery</span>
+
+                    <span>✨ Safe Crackers</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- BOTTOM -->
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Star Crackers. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+ <script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+
+        if (!hamburger || !navLinks) return;
+
+        hamburger.addEventListener("click", function () {
+            navLinks.classList.toggle("active");
+        });
+
+    });
+    </script>
+
+</body>
+</html>
